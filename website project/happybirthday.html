@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "vi">
+<head>
+    <meta charset = "UTF-8">
+    <title>Happy Birthday 🎂</title>
+    <link rel="stylesheet" href="happybirthday.css">
+</head>
+
+<body>
+    <div class="tilte-box">
+        <h1>🎉 Chúc mừng sinh nhật Mai Trang tuổi 19 🎉</h1>
+    </div>
+    <h1>🎁 Mở những hộp quà dưới đây 🎁</h1>
+
+    <div class="gifts">
+        <div class="gift" onclick="openGift(1)">🎁</div>
+        <div class="gift" onclick="openGift(2)">🎁</div>
+        <div class="gift" onclick="openGift(3)">🎁</div>
+    </div>
+
+    <!-- Popup-->
+     <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">x</span>
+            <img id="popup-img">
+            <p id="popup-text"></p>
+        </div>
+     </div>
+     <script src="happybirthday.js"></script>
+</body>
+</html>
